@@ -1,0 +1,18 @@
+# Sereno — official support
+
+> Official support, privacy, App Store, and guide links for Sereno.
+
+## Apps
+
+- [Sereno on the App Store](https://apps.apple.com/app/id6788236641)
+- [Sereno independent guide](https://alice51849.github.io/ios-app-guide/guides/sereno.html)
+
+## Support
+
+- [Official support site](https://alice51849.github.io/sereno-support/)
+- [Privacy policy](https://alice51849.github.io/sereno-support/privacy.html)
+- [Support and FAQ](https://alice51849.github.io/sereno-support/support.html)
+
+## Portfolio
+
+- [All public iOS apps](https://alice51849.github.io/ios-app-guide/apps/index.html)
