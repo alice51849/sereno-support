@@ -4,30 +4,52 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — Sereno</title>
-  <meta name="description" content="Sereno privacy policy: no personal data collected, no account, no analytics, no ads, no tracking, and no servers. Everything runs offline on your device.">
+  <meta id="meta-description" name="description" content="Sereno works fully offline with no account, ads, analytics, or tracking.">
   <link rel="icon" href="icon.png">
   <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
 </head>
-<body>
+<body data-page="privacy">
   <div class="bg"><span class="blob"></span></div>
-  <header><div class="wrap nav"><a class="brand" href="index.html"><img class="icon" src="icon.png" alt="Sereno"><span>Sereno</span></a><nav class="nav-links" aria-label="Primary navigation"><a href="index.html#features">Features</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav></div></header>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" data-page-link="index.html" href="index.html"><img class="icon" src="icon.png" alt=""><span>Sereno</span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a data-page-link="index.html" href="index.html" data-i18n="home">Sereno</a>
+        <a data-page-link="privacy.html" href="privacy.html" data-i18n="privacy">Privacy</a>
+        <a data-page-link="support.html" href="support.html" data-i18n="support">Support</a>
+        <label class="lang"><span class="sr-only">Language</span><select id="locale-switcher" aria-label="Language"></select></label>
+      </nav>
+    </div>
+  </header>
   <main>
-    <section class="hero wrap reveal"><img class="icon app-icon" src="icon.png" alt="Sereno app icon"><h1>Privacy Policy</h1><p class="updated">Effective date: 2026-07-04</p><p class="sub">Sereno is a fully offline sleep &amp; white-noise app. Every sound is generated on your device. This policy explains what Sereno does and does not collect.</p></section>
-    <section class="wrap doc reveal"><article class="card">
-      <h2>1. Data Not Collected</h2><p>Sereno does not collect personal data. The app has no account system, no analytics, no advertising, no tracking SDKs, and no developer-operated servers. We do not receive your usage history, device identifiers, listening habits, saved mixes, payment card details, or location.</p>
-      <h2>2. Everything runs on your device</h2><p>Sereno synthesizes all sound in real time on your iPhone or iPad using on-device audio processing. There are no audio files to download and no streaming. The app is designed to work completely offline, and your activity never leaves the device through Sereno.</p>
-      <h2>3. No account, ads, analytics, tracking, or servers</h2><p>Sereno does not ask you to sign in, does not build a profile about you, does not show ads, and does not use third-party analytics or tracking tools. The app does not send your data to any server.</p>
-      <h2>4. Permissions</h2><p>Sereno does not request access to your microphone, camera, photos, contacts, or location. It only plays audio, including in the background and on the lock screen, so you can fall asleep or stay focused.</p>
-      <h2>5. Local app data</h2><p>Sereno stores your preferences, saved and favorite mixes, selected theme and language, sleep-timer and sunrise settings, and your Pro purchase status locally on your device so the app can function. This information is not sent to us.</p>
-      <h2>6. Purchases</h2><p>Sereno Pro is a one-time, non-subscription In-App Purchase processed by Apple. Purchase and restore are handled by Apple's StoreKit. We do not receive or store your payment card information.</p>
-      <h2>7. Optional iCloud</h2><p>If you enable it, Sereno may use your private iCloud (provided by Apple) to sync your own preferences and saved mixes across your devices. This data is stored in your personal iCloud account and is not accessible to the developer.</p>
-      <h2>8. Deleting data</h2><p>You can remove your saved mixes within Sereno or delete the app from your device. Because Sereno is local-first and keeps no server copy, removing local content removes it from the app.</p>
-      <h2>9. Children's privacy</h2><p>Sereno does not knowingly collect personal information from children or anyone else, and it contains no user-generated content or communication features.</p>
-      <h2>10. Changes to this policy</h2><p>If this policy changes, we will update this page and the effective date above.</p>
-      <h2>11. Contact</h2><p>If you have questions about privacy or support, contact us at <a href="mailto:alice51849@hotmail.com">alice51849@hotmail.com</a>.</p>
-    </article></section>
+    <section class="hero wrap reveal">
+      <img class="icon app-icon" src="icon.png" alt="">
+      <h1 data-i18n="privacyTitle">Privacy Policy</h1>
+      <time class="updated" datetime="2026-07-04">2026-07-04</time>
+      <p class="sub" data-i18n="privacyIntro">Everything stays on your device. No account, no tracking.</p>
+    </section>
+    <section class="wrap doc reveal">
+      <article class="card">
+        <h2 data-i18n="privacy">Privacy</h2>
+        <p data-i18n="privacyText">No subscription. No ads. No account. Everything works fully offline.</p>
+        <h2 data-i18n="deviceTitle">Processing stays on your device</h2>
+        <p data-i18n="deviceText">Every soundscape is generated live on your device. Sereno does not send your listening activity to a developer-operated server.</p>
+        <h2 data-i18n="storeTitle">Apple StoreKit</h2>
+        <p data-i18n="storeText">The optional one-time purchase and restore are processed by Apple.</p>
+        <h2 data-i18n="contactTitle">Contact support</h2>
+        <p><a href="mailto:alice51849@hotmail.com">alice51849@hotmail.com</a></p>
+      </article>
+    </section>
   </main>
-  <footer><div class="wrap"><div class="foot"><a class="brand" href="index.html"><img class="icon" src="icon.png" alt="Sereno"><span>Sereno</span></a><div class="foot-links"><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="mailto:alice51849@hotmail.com">alice51849@hotmail.com</a></div></div><p class="copy">© 2026 Sereno. All rights reserved.</p></div></footer>
-  <script>document.addEventListener('DOMContentLoaded',function(){const reveal=function(){document.querySelectorAll('.reveal').forEach(el=>{if(el.getBoundingClientRect().top<window.innerHeight-60)el.classList.add('in')})};reveal();window.addEventListener('scroll',reveal,{passive:true})});</script>
+  <footer>
+    <div class="wrap">
+      <div class="foot">
+        <a class="brand" data-page-link="index.html" href="index.html"><img class="icon" src="icon.png" alt=""><span>Sereno</span></a>
+        <div class="foot-links"><a data-page-link="index.html" href="index.html" data-i18n="home">Sereno</a><a data-page-link="support.html" href="support.html" data-i18n="support">Support</a><a href="mailto:alice51849@hotmail.com">alice51849@hotmail.com</a></div>
+      </div>
+      <p class="copy">© 2026 Sereno</p>
+    </div>
+  </footer>
 </body>
 </html>

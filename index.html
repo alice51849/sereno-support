@@ -4,25 +4,57 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sereno — Sleep Sounds &amp; White Noise</title>
-  <meta name="description" content="Sereno turns your phone into a high-end sound machine. 1000+ living soundscapes generated in real time — buy once, no subscription, 100% offline.">
+  <meta id="meta-description" name="description" content="Living sleep sounds, white noise, focus, and calm — fully offline with one lifetime purchase.">
   <link rel="icon" href="icon.png">
   <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
 </head>
-<body>
+<body data-page="home">
   <div class="bg"><span class="blob"></span></div>
-  <header><div class="wrap nav"><a class="brand" href="index.html"><img class="icon" src="icon.png" alt="Sereno"><span>Sereno</span></a><nav class="nav-links" aria-label="Primary navigation"><a href="index.html#features">Features</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav></div></header>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" data-page-link="index.html" href="index.html"><img class="icon" src="icon.png" alt=""><span>Sereno</span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a data-page-link="index.html" href="index.html" data-i18n="home">Sereno</a>
+        <a data-page-link="privacy.html" href="privacy.html" data-i18n="privacy">Privacy</a>
+        <a data-page-link="support.html" href="support.html" data-i18n="support">Support</a>
+        <label class="lang"><span class="sr-only">Language</span><select id="locale-switcher" aria-label="Language"></select></label>
+      </nav>
+    </div>
+  </header>
   <main>
-    <section class="hero wrap reveal"><img class="icon app-icon" src="icon.png" alt="Sereno app icon"><h1>Sleep, focus, and calm — generated live.</h1><p class="sub">Sereno turns your phone into a high-end sound machine. 1000+ living soundscapes are synthesized in real time, so the rain never loops and the ocean never repeats. Buy once. No subscription. No ads. 100% offline.</p></section>
-    <section id="features" class="wrap doc reveal"><article class="card">
-      <h2>1000+ living soundscapes</h2><p>Real-time synthesis creates sound that never repeats — colored noise, rain, ocean, wind, streams, fire, night crickets, fans and more, a fresh performance every time.</p>
-      <h2>Unlimited mixing</h2><p>Layer as many sounds as you like and tune each track's volume, balance and EQ to build your perfect mix.</p>
-      <h2>Every scenario</h2><p>Ready-made scenes for sleep, deep focus, ADHD focus, study, relaxation, meditation, tinnitus relief, baby sleep and travel — save and name your own.</p>
-      <h2>Gentle sleep tools</h2><p>A sleep timer that fades out softly, plus a sunrise wake that swells in birdsong to greet the morning.</p>
-      <h2>Private by design</h2><p>No tracking, no ads, no account, no data collected. Everything stays on your device and works offline.</p>
-      <h2>Buy once, yours forever</h2><p>Unlock Sereno Pro with a single one-time purchase — no subscription, ever.</p>
-    </article></section>
+    <section class="hero wrap reveal">
+      <img class="icon app-icon" src="icon.png" alt="">
+      <h1 data-i18n="heroTitle">Sleep sounds, white noise, and focus</h1>
+      <p class="sub" data-i18n="hero">Buy once and create living soundscapes that work fully offline.</p>
+      <div class="badges">
+        <span class="pill" data-i18n="privacyBadge">100% offline · no ads · no tracking</span>
+        <span class="pill" data-i18n="purchaseTitle">One-time purchase</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn" href="https://apps.apple.com/app/id6788236641">App Store</a>
+      </div>
+    </section>
+    <section id="features" class="wrap reveal">
+      <div class="section-title"><h2 data-i18n="featuresTitle">1000+ living soundscapes</h2></div>
+      <div class="grid">
+        <article class="card"><div class="emoji" aria-hidden="true">◌</div><h3 data-i18n="soundTitle">Sounds</h3><p data-i18n="soundText">Every soundscape is generated live, so it never loops.</p></article>
+        <article class="card"><div class="emoji" aria-hidden="true">≋</div><h3 data-i18n="mixerTitle">Mixer</h3><p data-i18n="mixerText">Layer rain, ocean, fire, and more, then tune every track.</p></article>
+        <article class="card"><div class="emoji" aria-hidden="true">✦</div><h3 data-i18n="scenesTitle">Scenes</h3><p data-i18n="scenesText">Choose a scene or save your own mix.</p></article>
+        <article class="card"><div class="emoji" aria-hidden="true">☾</div><h3 data-i18n="timerTitle">Sleep timer, fade-out &amp; sunrise</h3><p data-i18n="timerText">Set a timer for your listening session.</p></article>
+        <article class="card"><div class="emoji" aria-hidden="true">◇</div><h3 data-i18n="privacy">Privacy</h3><p data-i18n="privacyText">No subscription, ads, account, or tracking. Everything works offline.</p></article>
+        <article class="card"><div class="emoji" aria-hidden="true">∞</div><h3 data-i18n="purchaseTitle">One-time purchase</h3><p data-i18n="purchaseText">One quiet payment unlocks it all. No subscription, ever.</p></article>
+      </div>
+    </section>
   </main>
-  <footer><div class="wrap"><div class="foot"><a class="brand" href="index.html"><img class="icon" src="icon.png" alt="Sereno"><span>Sereno</span></a><div class="foot-links"><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="mailto:alice51849@hotmail.com">alice51849@hotmail.com</a></div></div><p class="copy">© 2026 Sereno. All rights reserved.</p></div></footer>
-  <script>document.addEventListener('DOMContentLoaded',function(){const reveal=function(){document.querySelectorAll('.reveal').forEach(el=>{if(el.getBoundingClientRect().top<window.innerHeight-60)el.classList.add('in')})};reveal();window.addEventListener('scroll',reveal,{passive:true})});</script>
+  <footer>
+    <div class="wrap">
+      <div class="foot">
+        <a class="brand" data-page-link="index.html" href="index.html"><img class="icon" src="icon.png" alt=""><span>Sereno</span></a>
+        <div class="foot-links"><a data-page-link="privacy.html" href="privacy.html" data-i18n="privacy">Privacy</a><a data-page-link="support.html" href="support.html" data-i18n="support">Support</a><a href="mailto:alice51849@hotmail.com">alice51849@hotmail.com</a></div>
+      </div>
+      <p class="copy">© 2026 Sereno</p>
+    </div>
+  </footer>
 </body>
 </html>

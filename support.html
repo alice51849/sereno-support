@@ -4,26 +4,55 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Support — Sereno</title>
-  <meta name="description" content="Sereno support: how to use sounds, mixing, sleep timer, sunrise wake, Pro purchase and restore. Contact us for help.">
+  <meta id="meta-description" name="description" content="Sereno support for sounds, mixing, scenes, timers, and purchase restoration.">
   <link rel="icon" href="icon.png">
   <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
 </head>
-<body>
+<body data-page="support">
   <div class="bg"><span class="blob"></span></div>
-  <header><div class="wrap nav"><a class="brand" href="index.html"><img class="icon" src="icon.png" alt="Sereno"><span>Sereno</span></a><nav class="nav-links" aria-label="Primary navigation"><a href="index.html#features">Features</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav></div></header>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" data-page-link="index.html" href="index.html"><img class="icon" src="icon.png" alt=""><span>Sereno</span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a data-page-link="index.html" href="index.html" data-i18n="home">Sereno</a>
+        <a data-page-link="privacy.html" href="privacy.html" data-i18n="privacy">Privacy</a>
+        <a data-page-link="support.html" href="support.html" data-i18n="support">Support</a>
+        <label class="lang"><span class="sr-only">Language</span><select id="locale-switcher" aria-label="Language"></select></label>
+      </nav>
+    </div>
+  </header>
   <main>
-    <section class="hero wrap reveal"><img class="icon app-icon" src="icon.png" alt="Sereno app icon"><h1>Support</h1><p class="sub">Questions, feedback, or need a hand? We're happy to help.</p></section>
-    <section class="wrap doc reveal"><article class="card">
-      <h2>Getting started</h2><p>Open the Sounds tab and tap any sound to start playing. Tap more sounds to layer them, then open the Mixer to set each track's volume, balance and EQ. Save a mix you love as your own scene.</p>
-      <h2>Scenes</h2><p>The Scenes tab has ready-made mixes for sleep, focus, ADHD focus, study, relaxation, baby sleep and more. Tap one to play it instantly.</p>
-      <h2>Sleep timer &amp; sunrise</h2><p>In the Sleep tab, choose a timer duration to gently fade the sound out as you drift off. Turn on Sunrise wake-up and pick a time to wake gently to rising birdsong while Sereno plays through the night.</p>
-      <h2>Background &amp; lock screen</h2><p>Sereno keeps playing when your screen is off and can be controlled from the lock screen and Control Center, as well as over AirPlay.</p>
-      <h2>Sereno Pro</h2><p>Sereno Pro is a one-time purchase that unlocks every sound, unlimited mixing layers, all scenes, tuning controls, all themes and the immersive mode — with no subscription. Purchased on another device? Tap "Restore Purchases" on the paywall or in Settings.</p>
-      <h2>Works offline</h2><p>Sereno needs no internet connection. All sound is generated on your device, and no data is collected.</p>
-      <h2>Contact us</h2><p>Email <a href="mailto:alice51849@hotmail.com">alice51849@hotmail.com</a> and we'll get back to you.</p>
-    </article></section>
+    <section class="hero wrap reveal">
+      <img class="icon app-icon" src="icon.png" alt="">
+      <h1 data-i18n="supportTitle">Support</h1>
+      <p class="sub" data-i18n="supportIntro">Create living soundscapes for sleep, focus, and calm.</p>
+    </section>
+    <section class="wrap doc reveal">
+      <article class="card">
+        <h2 data-i18n="soundTitle">Sounds</h2>
+        <p data-i18n="soundHelp">Pick a sound, then add more from the library to begin layering.</p>
+        <h2 data-i18n="mixerTitle">Mixer</h2>
+        <p data-i18n="mixerText">Layer rain, ocean, fire, and more, then tune every track.</p>
+        <h2 data-i18n="scenesTitle">Scenes</h2>
+        <p data-i18n="scenesHelp">Build a mix, then save it as your own scene.</p>
+        <h2 data-i18n="timerTitle">Sleep timer, fade-out &amp; sunrise</h2>
+        <p data-i18n="timerText">Set a timer for your listening session.</p>
+        <h2 data-i18n="purchaseTitle">One-time purchase</h2>
+        <p><span data-i18n="purchaseText">One quiet payment unlocks it all. No subscription, ever.</span> <span data-i18n="restore">Restore purchases</span></p>
+        <h2 data-i18n="contactTitle">Contact support</h2>
+        <p><a href="mailto:alice51849@hotmail.com">alice51849@hotmail.com</a></p>
+      </article>
+    </section>
   </main>
-  <footer><div class="wrap"><div class="foot"><a class="brand" href="index.html"><img class="icon" src="icon.png" alt="Sereno"><span>Sereno</span></a><div class="foot-links"><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="mailto:alice51849@hotmail.com">alice51849@hotmail.com</a></div></div><p class="copy">© 2026 Sereno. All rights reserved.</p></div></footer>
-  <script>document.addEventListener('DOMContentLoaded',function(){const reveal=function(){document.querySelectorAll('.reveal').forEach(el=>{if(el.getBoundingClientRect().top<window.innerHeight-60)el.classList.add('in')})};reveal();window.addEventListener('scroll',reveal,{passive:true})});</script>
+  <footer>
+    <div class="wrap">
+      <div class="foot">
+        <a class="brand" data-page-link="index.html" href="index.html"><img class="icon" src="icon.png" alt=""><span>Sereno</span></a>
+        <div class="foot-links"><a data-page-link="index.html" href="index.html" data-i18n="home">Sereno</a><a data-page-link="privacy.html" href="privacy.html" data-i18n="privacy">Privacy</a><a href="mailto:alice51849@hotmail.com">alice51849@hotmail.com</a></div>
+      </div>
+      <p class="copy">© 2026 Sereno</p>
+    </div>
+  </footer>
 </body>
 </html>
