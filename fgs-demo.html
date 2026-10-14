@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sereno – Foreground service demo</title>
+<meta name="description" content="Screen recording showing how Sereno for Android uses its media playback foreground service (FOREGROUND_SERVICE_MEDIA_PLAYBACK).">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="style.css">
+<style>
+main.fgs{max-width:760px;margin:0 auto;padding:24px 16px 48px;line-height:1.6}
+main.fgs video{display:block;width:100%;max-width:360px;margin:16px auto;border-radius:16px;background:#000}
+main.fgs ol li{margin:.25em 0}
+</style>
+</head>
+<body>
+<main class="fgs">
+<h1>Sereno – Foreground service demo</h1>
+<p>This video is a real screen recording of Sereno for Android (release build 1.0.5, Android 15 emulator). It shows why the app uses a foreground service of type <code>mediaPlayback</code> (<code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>).</p>
+<video controls playsinline preload="metadata" src="fgs-demo.mp4"></video>
+<p><a href="fgs-demo.mp4">Download / open the video file (MP4, H.264)</a></p>
+<h2>What the foreground service does</h2>
+<p>Sereno plays ambient soundscapes that are generated live on the device. When the user starts a sound, <code>SerenoPlaybackService</code> (a Media3 <code>MediaSessionService</code>) keeps that sound playing while the screen is off or the user is in another app, and shows the standard media notification with play/pause controls. When the user pauses, the service leaves the foreground state; when the user clears the mix, playback stops and the notification is removed. The service only runs while the user is listening to a sound they started.</p>
+<p>If the system stopped or delayed this service, the sound the user chose would cut out as soon as the screen turns off or they switch apps (for example while falling asleep or focusing), which is the core purpose of the app.</p>
+<h2>Steps shown in the video</h2>
+<ol>
+<li>Open Sereno.</li>
+<li>Tap a sound (Coffee Shop) – playback starts and the media playback foreground service starts.</li>
+<li>Go to the home screen – the sound keeps playing.</li>
+<li>The notification shade shows the ongoing media notification with playback controls.</li>
+<li>Back in Sereno, open the Mixer and tap Clear mix – playback stops.</li>
+<li>The Sereno notification is gone – the foreground service has stopped.</li>
+</ol>
+<p><a href="./">Sereno support</a> · <a href="privacy.html">Privacy Policy</a></p>
+</main>
+</body>
+</html>
