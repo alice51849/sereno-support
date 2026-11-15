@@ -22,4 +22,5 @@
 
 <!-- sqe-blitz:start -->
 - [ブラウンノイズ アプリ：ダウンロード前の質問（日本語）](https://open.cait518.cc/sereno-support/brown-noise-app-qa.ja.html)
+- [What is Sereno? Who it is for, how it is sold and how it differs (English)](https://open.cait518.cc/sereno-support/what-is-sereno.html)
 <!-- sqe-blitz:end -->
